@@ -12,8 +12,9 @@ import java.util.List;
 public interface UserService {
 
 
-//    create
+//    create user
     UserDto createUser(UserDto user);
+
 //    update
 
     UserDto updateUser(UserDto user,Long userid);
