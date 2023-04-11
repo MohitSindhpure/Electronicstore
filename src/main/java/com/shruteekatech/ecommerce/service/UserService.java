@@ -12,21 +12,21 @@ import java.util.List;
 public interface UserService {
 
 
-//    create user
+//    create Userser
     UserDto createUser(UserDto user);
 
-//    update
+//    update User
 
     UserDto updateUser(UserDto user,Long userid);
 
-//    delete
+//    delete User
     void deleteUser(Long userid);
 
-//    getalluser
+//    getall User
 
     PagableResponse getAllUsers(Integer pagenumber, Integer pagesize, String sortBy, String sortDir);
 
-//    getsingleuser
+//    getsingle User
 
     UserDto getSingleUser(Long userid);
 //    get user by email
