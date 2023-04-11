@@ -1,4 +1,4 @@
-package com.shruteekatech.ecommerce;
+package com.shruteekatech.Electronicstore;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

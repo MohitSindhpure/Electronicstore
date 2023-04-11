@@ -1,4 +1,4 @@
-package com.shruteekatech.ecommerce;
+package com.shruteekatech.Electronicstore;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
