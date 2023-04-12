@@ -1,11 +1,11 @@
 package com.shruteekatech.electronicstore.controller;
 
 
-import com.shruteekatech.ecommerce.dtos.ApiResponse;
-import com.shruteekatech.ecommerce.dtos.PagableResponse;
-import com.shruteekatech.ecommerce.dtos.ProductDto;
-import com.shruteekatech.ecommerce.service.ProductService;
 import com.shruteekatech.electronicstore.constant.AppConstant;
+import com.shruteekatech.electronicstore.dtos.ApiResponse;
+import com.shruteekatech.electronicstore.dtos.PagableResponse;
+import com.shruteekatech.electronicstore.dtos.ProductDto;
+import com.shruteekatech.electronicstore.service.ProductService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

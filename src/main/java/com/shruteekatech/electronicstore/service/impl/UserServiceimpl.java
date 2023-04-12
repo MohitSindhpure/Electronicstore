@@ -1,15 +1,16 @@
-package com.shruteekatech.ecommerce.service.impl;
+package com.shruteekatech.electronicstore.service.impl;
 
 
-import com.shruteekatech.ecommerce.constant.AppConstant;
-import com.shruteekatech.ecommerce.dtos.PagableResponse;
-import com.shruteekatech.ecommerce.dtos.UserDto;
-import com.shruteekatech.ecommerce.exception.EmailNotFoundException;
-import com.shruteekatech.ecommerce.exception.ResourcenotFoundException;
-import com.shruteekatech.ecommerce.helper.Pageablemethod;
-import com.shruteekatech.ecommerce.model.User;
-import com.shruteekatech.ecommerce.repository.UserRepository;
-import com.shruteekatech.ecommerce.service.UserService;
+
+import com.shruteekatech.electronicstore.constant.AppConstant;
+import com.shruteekatech.electronicstore.dtos.PagableResponse;
+import com.shruteekatech.electronicstore.dtos.UserDto;
+import com.shruteekatech.electronicstore.exception.EmailNotFoundException;
+import com.shruteekatech.electronicstore.exception.ResourcenotFoundException;
+import com.shruteekatech.electronicstore.helper.Pageablemethod;
+import com.shruteekatech.electronicstore.model.User;
+import com.shruteekatech.electronicstore.repository.UserRepository;
+import com.shruteekatech.electronicstore.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 
 import net.sf.jasperreports.engine.*;
