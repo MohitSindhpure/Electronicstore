@@ -28,7 +28,7 @@ public class ServiceTest {
     public void init()
     {
          user=User.builder()
-                .id(1l)
+                .id(2l)
                 .name("mohit")
                 .about("Software Enginner")
                 .email("mohitsindhpure1998@gmail.com")
