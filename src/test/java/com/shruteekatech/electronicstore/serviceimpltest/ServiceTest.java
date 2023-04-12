@@ -10,17 +10,19 @@ import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mockito;
 import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
-
+@SpringBootTest
 public class ServiceTest {
 
     @MockBean
     private UserRepository repositroy;
 
-    @MockBean
+    @Autowired
     private ModelMapper modelMapper;
 
-    @InjectMocks
+    @Autowired
     private UserServiceimpl userService;
 
     User user;
@@ -28,7 +30,7 @@ public class ServiceTest {
     public void init()
     {
          user=User.builder()
-                .id(2l)
+
                 .name("mohit")
                 .about("Software Enginner")
                 .email("mohitsindhpure1998@gmail.com")
@@ -38,6 +40,8 @@ public class ServiceTest {
                 .build();
     }
 
+    // create User
+
     @Test
     public void createuserTest()
     {
@@ -45,8 +49,12 @@ public class ServiceTest {
         UserDto user1= userService.createUser(modelMapper.map(user,UserDto.class));
 
         System.out.println(user1.getName());
+        Assertions.assertEquals(user.getName(),user1.getName());
         Assertions.assertNotNull(user1);
-        Assertions.assertEquals(user1,user);
+
     }
+
+
+
 
 }
