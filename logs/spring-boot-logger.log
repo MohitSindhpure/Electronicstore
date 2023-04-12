@@ -1,285 +1,36 @@
-2023-04-11 23:25:12,995 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
-2023-04-11 23:25:13,052 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting ElectronicstoreApplication using Java 17.0.4 on MohitSindhpure with PID 20568 (G:\Intellije-WorkSpace\Electronicstore\target\classes started by hp in G:\Intellije-WorkSpace\Electronicstore)
-2023-04-11 23:25:13,054 INFO org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "dev"
-2023-04-11 23:25:13,809 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-04-11 23:25:13,811 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-04-11 23:25:19,302 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-04-11 23:25:19,701 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 315 ms. Found 3 JPA repository interfaces.
-2023-04-11 23:25:25,434 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9696 (http)
-2023-04-11 23:25:25,458 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9696"]
-2023-04-11 23:25:25,459 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2023-04-11 23:25:25,460 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.73]
-2023-04-11 23:25:27,949 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2023-04-11 23:25:27,950 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 14136 ms
-2023-04-11 23:25:29,537 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-04-11 23:25:29,948 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.15.Final
-2023-04-11 23:25:30,717 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-04-11 23:25:31,073 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
-2023-04-11 23:25:34,152 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
-2023-04-11 23:25:34,363 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2023-04-11 23:25:47,366 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-04-11 23:25:47,451 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-04-11 23:25:49,724 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-04-11 23:25:52,333 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2023-04-11 23:25:52,363 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9696"]
-2023-04-11 23:25:52,466 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9696 (http) with context path ''
-2023-04-11 23:25:52,492 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started ElectronicstoreApplication in 42.039 seconds (JVM running for 45.823)
-2023-04-11 23:33:54,422 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9696-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-04-11 23:33:54,423 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9696-exec-1] Initializing Servlet 'dispatcherServlet'
-2023-04-11 23:33:54,432 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9696-exec-1] Completed initialization in 9 ms
-2023-04-11 23:33:55,456 INFO com.shruteekatech.ecommerce.validation.ImageNameValidator [http-nio-9696-exec-1] Message from isValid : Rohit.png 
-2023-04-11 23:33:55,473 INFO com.shruteekatech.ecommerce.controller.UserController [http-nio-9696-exec-1] Initiated request to save the user details 
-2023-04-11 23:33:55,473 INFO com.shruteekatech.ecommerce.service.impl.UserServiceimpl [http-nio-9696-exec-1] Initiating dao call to Save the user data
-2023-04-11 23:33:56,715 INFO com.shruteekatech.ecommerce.service.impl.UserServiceimpl [http-nio-9696-exec-1] Completed dao call to Save the user data
-2023-04-11 23:33:56,720 INFO com.shruteekatech.ecommerce.controller.UserController [http-nio-9696-exec-1] Completed request to save the user details
-2023-04-11 23:35:07,866 INFO com.shruteekatech.ecommerce.validation.ImageNameValidator [http-nio-9696-exec-4] Message from isValid : Rohit.png 
-2023-04-11 23:35:07,867 INFO com.shruteekatech.ecommerce.controller.UserController [http-nio-9696-exec-4] Initiated request to save the user details 
-2023-04-11 23:35:07,867 INFO com.shruteekatech.ecommerce.service.impl.UserServiceimpl [http-nio-9696-exec-4] Initiating dao call to Save the user data
-2023-04-11 23:35:08,303 INFO com.shruteekatech.ecommerce.service.impl.UserServiceimpl [http-nio-9696-exec-4] Completed dao call to Save the user data
-2023-04-11 23:35:08,304 INFO com.shruteekatech.ecommerce.controller.UserController [http-nio-9696-exec-4] Completed request to save the user details
-2023-04-11 23:35:16,670 INFO com.shruteekatech.ecommerce.controller.UserController [http-nio-9696-exec-6] Initiated request to get all the user details
-2023-04-11 23:35:16,671 INFO com.shruteekatech.ecommerce.service.impl.UserServiceimpl [http-nio-9696-exec-6] Initiating dao call to get the All users data 
-2023-04-11 23:35:18,698 INFO com.shruteekatech.ecommerce.service.impl.UserServiceimpl [http-nio-9696-exec-6] Completed dao call to get the All users data 
-2023-04-11 23:35:18,699 INFO com.shruteekatech.ecommerce.controller.UserController [http-nio-9696-exec-6] Completed request to get all the user details
-2023-04-11 23:35:30,749 INFO com.shruteekatech.ecommerce.controller.UserController [http-nio-9696-exec-7] Initiated request to get all the user details
-2023-04-11 23:35:30,750 INFO com.shruteekatech.ecommerce.service.impl.UserServiceimpl [http-nio-9696-exec-7] Initiating dao call to get the All users data 
-2023-04-11 23:35:30,779 INFO com.shruteekatech.ecommerce.service.impl.UserServiceimpl [http-nio-9696-exec-7] Completed dao call to get the All users data 
-2023-04-11 23:35:30,780 INFO com.shruteekatech.ecommerce.controller.UserController [http-nio-9696-exec-7] Completed request to get all the user details
-2023-04-11 23:35:39,289 INFO com.shruteekatech.ecommerce.controller.UserController [http-nio-9696-exec-8] Initiated request to get all the user details
-2023-04-11 23:35:39,289 INFO com.shruteekatech.ecommerce.service.impl.UserServiceimpl [http-nio-9696-exec-8] Initiating dao call to get the All users data 
-2023-04-11 23:35:39,717 INFO com.shruteekatech.ecommerce.service.impl.UserServiceimpl [http-nio-9696-exec-8] Completed dao call to get the All users data 
-2023-04-11 23:35:39,718 INFO com.shruteekatech.ecommerce.controller.UserController [http-nio-9696-exec-8] Completed request to get all the user details
-2023-04-11 23:35:52,806 INFO com.shruteekatech.ecommerce.controller.UserController [http-nio-9696-exec-9] Initiated request to get the single user with UserId :2 
-2023-04-11 23:35:52,807 INFO com.shruteekatech.ecommerce.service.impl.UserServiceimpl [http-nio-9696-exec-9] Initiating dao call to get the single user data with userId:2
-2023-04-11 23:35:53,807 INFO com.shruteekatech.ecommerce.service.impl.UserServiceimpl [http-nio-9696-exec-9] Completed dao call to get the single user data with userId:2
-2023-04-11 23:35:53,808 INFO com.shruteekatech.ecommerce.controller.UserController [http-nio-9696-exec-9] Completed request to get the single user with UserId:2
-2023-04-11 23:36:00,058 INFO com.shruteekatech.ecommerce.controller.UserController [http-nio-9696-exec-10] Initiated request to get all the user with email :Rohit@com 
-2023-04-11 23:36:00,059 INFO com.shruteekatech.ecommerce.service.impl.UserServiceimpl [http-nio-9696-exec-10] Initiating dao call to get the singleuser data with email:Rohit@com
-2023-04-11 23:36:00,119 INFO com.shruteekatech.ecommerce.service.impl.UserServiceimpl [http-nio-9696-exec-10] Completed dao call to get the singleuser data with email:Rohit@com
-2023-04-11 23:36:00,121 INFO com.shruteekatech.ecommerce.controller.UserController [http-nio-9696-exec-10] completed request to get all the user with email :Rohit@com 
-2023-04-11 23:36:06,775 INFO com.shruteekatech.ecommerce.controller.UserController [http-nio-9696-exec-2] Initiated request to get all the user with email :mohit@com 
-2023-04-11 23:36:06,776 INFO com.shruteekatech.ecommerce.service.impl.UserServiceimpl [http-nio-9696-exec-2] Initiating dao call to get the singleuser data with email:mohit@com
-2023-04-11 23:36:06,785 INFO com.shruteekatech.ecommerce.service.impl.UserServiceimpl [http-nio-9696-exec-2] Completed dao call to get the singleuser data with email:mohit@com
-2023-04-11 23:36:06,786 INFO com.shruteekatech.ecommerce.controller.UserController [http-nio-9696-exec-2] completed request to get all the user with email :mohit@com 
-2023-04-11 23:36:19,299 INFO com.shruteekatech.ecommerce.validation.ImageNameValidator [http-nio-9696-exec-1] Message from isValid : Dhananjay.png 
-2023-04-11 23:36:19,301 INFO com.shruteekatech.ecommerce.controller.UserController [http-nio-9696-exec-1] Initiated request for update the user with userId :1 
-2023-04-11 23:36:19,303 INFO com.shruteekatech.ecommerce.service.impl.UserServiceimpl [http-nio-9696-exec-1] Initiating dao call to update the user data with userId:1
-2023-04-11 23:36:19,317 INFO com.shruteekatech.ecommerce.service.impl.UserServiceimpl [http-nio-9696-exec-1] Completed dao call to update the user data with userId:1
-2023-04-11 23:36:19,600 INFO com.shruteekatech.ecommerce.controller.UserController [http-nio-9696-exec-1] Completed request for update the user with userId :1 
-2023-04-11 23:36:32,067 INFO com.shruteekatech.ecommerce.controller.UserController [http-nio-9696-exec-3] Initiated request to get all the user details
-2023-04-11 23:36:32,067 INFO com.shruteekatech.ecommerce.service.impl.UserServiceimpl [http-nio-9696-exec-3] Initiating dao call to get the All users data 
-2023-04-11 23:36:32,115 INFO com.shruteekatech.ecommerce.service.impl.UserServiceimpl [http-nio-9696-exec-3] Completed dao call to get the All users data 
-2023-04-11 23:36:32,116 INFO com.shruteekatech.ecommerce.controller.UserController [http-nio-9696-exec-3] Completed request to get all the user details
-2023-04-11 23:38:28,269 INFO com.shruteekatech.ecommerce.controller.UserController [http-nio-9696-exec-6] Initiated request to get all the user with keyword :mohit 
-2023-04-11 23:38:28,270 INFO com.shruteekatech.ecommerce.service.impl.UserServiceimpl [http-nio-9696-exec-6] Initiating dao call to get the users data with keyword:mohit
-2023-04-11 23:38:28,300 INFO com.shruteekatech.ecommerce.service.impl.UserServiceimpl [http-nio-9696-exec-6] completed dao call to get the users data with keyword:mohit
-2023-04-11 23:38:28,301 INFO com.shruteekatech.ecommerce.controller.UserController [http-nio-9696-exec-6] Completed request to get all the user with keyword :mohit 
-2023-04-11 23:38:44,904 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-9696-exec-7] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
-2023-04-11 23:39:10,290 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-9696-exec-8] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
-2023-04-11 23:39:57,117 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-04-11 23:39:57,151 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
-2023-04-11 23:39:57,216 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
-2023-04-11 23:40:21,003 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting ElectronicstoreApplication using Java 17.0.4 on MohitSindhpure with PID 9492 (G:\Intellije-WorkSpace\Electronicstore\target\classes started by hp in G:\Intellije-WorkSpace\Electronicstore)
-2023-04-11 23:40:20,999 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
-2023-04-11 23:40:21,005 INFO org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "dev"
-2023-04-11 23:40:21,139 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-04-11 23:40:21,139 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-04-11 23:40:22,938 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-04-11 23:40:23,092 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 134 ms. Found 3 JPA repository interfaces.
-2023-04-11 23:40:25,017 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9696 (http)
-2023-04-11 23:40:25,036 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9696"]
-2023-04-11 23:40:25,037 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2023-04-11 23:40:25,038 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.73]
-2023-04-11 23:40:25,439 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2023-04-11 23:40:25,440 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 4299 ms
-2023-04-11 23:40:25,801 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-04-11 23:40:25,923 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.15.Final
-2023-04-11 23:40:26,326 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-04-11 23:40:26,481 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
-2023-04-11 23:40:27,154 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
-2023-04-11 23:40:27,179 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2023-04-11 23:40:28,783 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-04-11 23:40:28,802 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-04-11 23:40:30,098 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-04-11 23:40:30,938 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2023-04-11 23:40:30,969 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9696"]
-2023-04-11 23:40:31,012 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9696 (http) with context path ''
-2023-04-11 23:40:31,037 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started ElectronicstoreApplication in 10.846 seconds (JVM running for 12.179)
-2023-04-11 23:41:01,542 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9696-exec-3] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-04-11 23:41:01,547 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9696-exec-3] Initializing Servlet 'dispatcherServlet'
-2023-04-11 23:41:01,550 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9696-exec-3] Completed initialization in 3 ms
-2023-04-11 23:41:01,963 INFO com.shruteekatech.ecommerce.controller.UserController [http-nio-9696-exec-3] Upload the image with userid:2
-2023-04-11 23:41:01,965 INFO com.shruteekatech.ecommerce.service.impl.UserServiceimpl [http-nio-9696-exec-3] Initiating dao call to get the single user data with userId:2
-2023-04-11 23:41:02,436 INFO com.shruteekatech.ecommerce.service.impl.UserServiceimpl [http-nio-9696-exec-3] Completed dao call to get the single user data with userId:2
-2023-04-11 23:41:02,437 INFO com.shruteekatech.ecommerce.service.impl.FileServiceImpl [http-nio-9696-exec-3] Filename :Intellije logo1.png
-2023-04-11 23:41:02,479 INFO com.shruteekatech.ecommerce.service.impl.UserServiceimpl [http-nio-9696-exec-3] Initiating dao call to update the user data with userId:2
-2023-04-11 23:41:02,489 INFO com.shruteekatech.ecommerce.service.impl.UserServiceimpl [http-nio-9696-exec-3] Completed dao call to update the user data with userId:2
-2023-04-11 23:41:02,734 INFO com.shruteekatech.ecommerce.controller.UserController [http-nio-9696-exec-3] Completed the upload image process
-2023-04-11 23:41:02,913 WARN org.springframework.web.multipart.support.StandardServletMultipartResolver [http-nio-9696-exec-3] Failed to perform cleanup of multipart items
-java.io.UncheckedIOException: Cannot delete C:\Users\hp\AppData\Local\Temp\tomcat.9696.16676902977289405352\work\Tomcat\localhost\ROOT\upload_3af1056f_a9cd_467b_84f3_3f1fb3041b24_00000000.tmp
-	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:431)
-	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53)
-	at org.springframework.web.multipart.support.StandardServletMultipartResolver.cleanupMultipart(StandardServletMultipartResolver.java:134)
-	at org.springframework.web.servlet.DispatcherServlet.cleanupMultipart(DispatcherServlet.java:1251)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1108)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:528)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: java.io.IOException: Cannot delete C:\Users\hp\AppData\Local\Temp\tomcat.9696.16676902977289405352\work\Tomcat\localhost\ROOT\upload_3af1056f_a9cd_467b_84f3_3f1fb3041b24_00000000.tmp
-	... 44 common frames omitted
-2023-04-11 23:41:02,916 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-9696-exec-3] Error processing request
-java.io.UncheckedIOException: Cannot delete C:\Users\hp\AppData\Local\Temp\tomcat.9696.16676902977289405352\work\Tomcat\localhost\ROOT\upload_3af1056f_a9cd_467b_84f3_3f1fb3041b24_00000000.tmp
-	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:431)
-	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53)
-	at org.apache.catalina.connector.Request.recycle(Request.java:474)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: java.io.IOException: Cannot delete C:\Users\hp\AppData\Local\Temp\tomcat.9696.16676902977289405352\work\Tomcat\localhost\ROOT\upload_3af1056f_a9cd_467b_84f3_3f1fb3041b24_00000000.tmp
-	... 13 common frames omitted
-2023-04-11 23:41:02,919 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-9696-exec-3] Error reading request, ignored
-java.io.UncheckedIOException: Cannot delete C:\Users\hp\AppData\Local\Temp\tomcat.9696.16676902977289405352\work\Tomcat\localhost\ROOT\upload_3af1056f_a9cd_467b_84f3_3f1fb3041b24_00000000.tmp
-	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:431)
-	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53)
-	at org.apache.catalina.connector.Request.recycle(Request.java:474)
-	at org.apache.catalina.connector.CoyoteAdapter.log(CoyoteAdapter.java:494)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:419)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: java.io.IOException: Cannot delete C:\Users\hp\AppData\Local\Temp\tomcat.9696.16676902977289405352\work\Tomcat\localhost\ROOT\upload_3af1056f_a9cd_467b_84f3_3f1fb3041b24_00000000.tmp
-	... 13 common frames omitted
-2023-04-11 23:41:02,920 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-9696-exec-3] Error running socket processor
-java.io.UncheckedIOException: Cannot delete C:\Users\hp\AppData\Local\Temp\tomcat.9696.16676902977289405352\work\Tomcat\localhost\ROOT\upload_3af1056f_a9cd_467b_84f3_3f1fb3041b24_00000000.tmp
-	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.delete(DiskFileItem.java:431)
-	at org.apache.catalina.core.ApplicationPart.delete(ApplicationPart.java:53)
-	at org.apache.catalina.connector.Request.recycle(Request.java:474)
-	at org.apache.catalina.connector.CoyoteAdapter.log(CoyoteAdapter.java:494)
-	at org.apache.catalina.connector.CoyoteAdapter.checkRecycled(CoyoteAdapter.java:517)
-	at org.apache.coyote.http11.Http11Processor.recycle(Http11Processor.java:1415)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.release(AbstractProtocol.java:1129)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1090)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: java.io.IOException: Cannot delete C:\Users\hp\AppData\Local\Temp\tomcat.9696.16676902977289405352\work\Tomcat\localhost\ROOT\upload_3af1056f_a9cd_467b_84f3_3f1fb3041b24_00000000.tmp
-	... 14 common frames omitted
-2023-04-11 23:41:47,503 INFO com.shruteekatech.ecommerce.controller.UserController [http-nio-9696-exec-4] initiated request to serve image with userid:1
-2023-04-11 23:41:47,504 INFO com.shruteekatech.ecommerce.service.impl.UserServiceimpl [http-nio-9696-exec-4] Initiating dao call to get the single user data with userId:1
-2023-04-11 23:41:47,518 INFO com.shruteekatech.ecommerce.service.impl.UserServiceimpl [http-nio-9696-exec-4] Completed dao call to get the single user data with userId:1
-2023-04-11 23:41:47,522 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-9696-exec-4] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
-java.io.FileNotFoundException: images\users\Dhananjay.png (The system cannot find the file specified)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
-	at com.shruteekatech.ecommerce.service.impl.FileServiceImpl.getResource(FileServiceImpl.java:68)
-	at com.shruteekatech.ecommerce.controller.UserController.serveUserimage(UserController.java:193)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:502)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-2023-04-11 23:41:55,820 INFO com.shruteekatech.ecommerce.controller.UserController [http-nio-9696-exec-7] initiated request to serve image with userid:2
-2023-04-11 23:41:55,823 INFO com.shruteekatech.ecommerce.service.impl.UserServiceimpl [http-nio-9696-exec-7] Initiating dao call to get the single user data with userId:2
-2023-04-11 23:41:55,843 INFO com.shruteekatech.ecommerce.service.impl.UserServiceimpl [http-nio-9696-exec-7] Completed dao call to get the single user data with userId:2
-2023-04-11 23:41:55,851 INFO com.shruteekatech.ecommerce.controller.UserController [http-nio-9696-exec-7] Completed request to serve image with userid:2
-2023-04-11 23:42:50,798 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-04-11 23:42:50,806 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
-2023-04-11 23:42:50,843 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-12 12:08:49,733 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-04-12 12:08:49,809 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting ElectronicstoreApplication using Java 17.0.4 on MohitSindhpure with PID 716 (G:\Intellije-WorkSpace\Electronicstore\target\classes started by hp in G:\Intellije-WorkSpace\Electronicstore)
+2023-04-12 12:08:49,811 INFO org.springframework.boot.SpringApplication [restartedMain] The following 1 profile is active: "dev"
+2023-04-12 12:08:50,138 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-12 12:08:50,139 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-12 12:08:54,764 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-12 12:08:55,159 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 315 ms. Found 3 JPA repository interfaces.
+2023-04-12 12:08:57,939 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9696 (http)
+2023-04-12 12:08:57,969 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9696"]
+2023-04-12 12:08:57,970 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-04-12 12:08:57,971 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-12 12:08:58,196 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-04-12 12:08:58,197 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 8053 ms
+2023-04-12 12:08:59,172 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-12 12:08:59,607 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-04-12 12:09:00,485 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-12 12:09:00,888 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-04-12 12:09:03,958 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-04-12 12:09:04,316 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-04-12 12:09:07,461 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-12 12:09:07,502 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-12 12:09:08,924 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-12 12:09:11,652 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-04-12 12:09:11,666 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9696"]
+2023-04-12 12:09:11,728 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9696 (http) with context path ''
+2023-04-12 12:09:11,739 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started ElectronicstoreApplication in 24.562 seconds (JVM running for 30.311)
+2023-04-12 12:10:02,780 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9696-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-12 12:10:02,780 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9696-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-04-12 12:10:02,783 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9696-exec-2] Completed initialization in 2 ms
+2023-04-12 12:10:02,981 INFO com.shruteekatech.electronicstore.controller.UserController [http-nio-9696-exec-2] Initiated request to get all the user details
+2023-04-12 12:10:02,982 INFO com.shruteekatech.electronicstore.service.impl.UserServiceimpl [http-nio-9696-exec-2] Initiating dao call to get the All users data 
+2023-04-12 12:10:04,047 INFO com.shruteekatech.electronicstore.service.impl.UserServiceimpl [http-nio-9696-exec-2] Completed dao call to get the All users data 
+2023-04-12 12:10:04,048 INFO com.shruteekatech.electronicstore.controller.UserController [http-nio-9696-exec-2] Completed request to get all the user details
+2023-04-12 12:11:56,191 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-12 12:11:56,211 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-12 12:11:56,389 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.

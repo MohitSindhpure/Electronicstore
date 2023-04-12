@@ -28,7 +28,7 @@ import java.io.InputStream;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/Category")
+@RequestMapping("/Api/Category")
 @Slf4j
 public class CategoryController {
 
