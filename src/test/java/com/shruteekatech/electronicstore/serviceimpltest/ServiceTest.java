@@ -88,6 +88,7 @@ public class ServiceTest {
 
         userService.deleteUser(id);
 
+        Mockito.verify(repositroy,Mockito.times(1)).delete(user);
     }
 
 }
