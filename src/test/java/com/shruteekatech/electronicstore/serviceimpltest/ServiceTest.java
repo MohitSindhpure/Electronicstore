@@ -1,5 +1,6 @@
 package com.shruteekatech.electronicstore.serviceimpltest;
 
+import com.shruteekatech.electronicstore.dtos.PagableResponse;
 import com.shruteekatech.electronicstore.dtos.UserDto;
 import com.shruteekatech.electronicstore.model.User;
 import com.shruteekatech.electronicstore.repository.UserRepository;
@@ -13,7 +14,10 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.data.domain.*;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.Optional;
 
 @SpringBootTest
@@ -89,6 +93,46 @@ public class ServiceTest {
         userService.deleteUser(id);
 
         Mockito.verify(repositroy,Mockito.times(1)).delete(user);
+
+    }
+
+    @Test
+    public void getAllUsersTest(){
+
+       User user1=User.builder()
+
+                .name("tinku")
+                .about("Mechanical Enginner")
+                .email("tinku@gmail.com")
+                .gender("Male")
+                .imageName("ab.png")
+                .password("1254@12")
+                .build();
+
+       User user2=User.builder()
+
+                .name("tanay")
+                .about("electrical Enginner")
+                .email("tanay@gmail.com")
+                .gender("Male")
+                .imageName("ac.png")
+                .password("1236@12")
+                .build();
+
+        List<User> userList = Arrays.asList(user,user1,user2);
+
+        Page<User> page=new PageImpl<>(userList);
+
+       Mockito.when(repositroy.findAll((Pageable) Mockito.any())).thenReturn(page);
+
+
+        PagableResponse<UserDto> allUsers = userService.getAllUsers(1, 2, "name", "ascending");
+
+        Assertions.assertEquals(3,allUsers.getContent().size());
+       
+
+               
+
     }
 
 }
