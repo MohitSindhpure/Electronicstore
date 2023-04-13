@@ -78,8 +78,16 @@ public class ServiceTest {
         Assertions.assertNotNull(userDto);
         Assertions.assertEquals(userDto.getName(),updateUser.getName(),"name is valid");
 
-
     }
 
+    @Test
+    public void deleteuserTest(){
+        Long id=1l;
+
+        Mockito.when(repositroy.findById(id)).thenReturn(Optional.of(user));
+
+        userService.deleteUser(id);
+
+    }
 
 }
