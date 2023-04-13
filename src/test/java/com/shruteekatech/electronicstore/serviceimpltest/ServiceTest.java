@@ -80,7 +80,7 @@ public class ServiceTest {
         UserDto updateUser = userService.updateUser(userDto, id);
         System.out.println(updateUser.getName());
         Assertions.assertNotNull(userDto);
-        Assertions.assertEquals(userDto.getName(),updateUser.getName(),"name is valid");
+        Assertions.assertEquals(userDto.getName(),updateUser.getName(),"name not valid");
 
     }
 
@@ -142,7 +142,7 @@ public class ServiceTest {
         UserDto singleUser = userService.getSingleUser(id);
 
         Assertions.assertNotNull(singleUser);
-        Assertions.assertEquals(user.getName(),singleUser.getName());
+        Assertions.assertEquals(user.getName(),singleUser.getName(),"user id not matched.");
     }
 
     @Test
@@ -189,5 +189,13 @@ public class ServiceTest {
                 .imageName("mmm.png")
                 .password("1239@12")
                 .build();
+
+        String keyword="mohit";
+
+        Mockito.when(repositroy.findByNameContaining(keyword)).thenReturn(Arrays.asList(user,user1,user2,user3));
+
+        List<UserDto> userDtos = userService.searchUsers(keyword);
+
+        Assertions.assertEquals(4,userDtos.size(),"Size not Matched");
     }
 }
