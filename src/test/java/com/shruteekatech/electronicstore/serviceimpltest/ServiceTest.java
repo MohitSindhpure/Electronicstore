@@ -160,5 +160,34 @@ public class ServiceTest {
     @Test
     public void serchUserTest(){
 
+        User user1=User.builder()
+
+                .name("tinku")
+                .about("Mechanical Enginner")
+                .email("tinku@gmail.com")
+                .gender("Male")
+                .imageName("ab.png")
+                .password("1254@12")
+                .build();
+
+        User user2=User.builder()
+
+                .name("tanay")
+                .about("electrical Enginner")
+                .email("tanay@gmail.com")
+                .gender("Male")
+                .imageName("ac.png")
+                .password("1236@12")
+                .build();
+
+        User user3=User.builder()
+
+                .name("Mohit")
+                .about("Software Enginner")
+                .email("mohit@gmail.com")
+                .gender("Male")
+                .imageName("mmm.png")
+                .password("1239@12")
+                .build();
     }
 }
