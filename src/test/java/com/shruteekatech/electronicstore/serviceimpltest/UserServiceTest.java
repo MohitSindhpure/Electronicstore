@@ -8,7 +8,6 @@ import com.shruteekatech.electronicstore.service.impl.UserServiceimpl;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.InjectMocks;
 import org.mockito.Mockito;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +20,7 @@ import java.util.List;
 import java.util.Optional;
 
 @SpringBootTest
-public class ServiceTest {
+public class UserServiceTest {
 
     @MockBean
     private UserRepository repositroy;
