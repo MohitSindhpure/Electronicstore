@@ -119,6 +119,7 @@ public class ServiceTest {
                 .password("1236@12")
                 .build();
 
+
         List<User> userList = Arrays.asList(user,user1,user2);
 
         Page<User> page=new PageImpl<>(userList);
@@ -129,10 +130,35 @@ public class ServiceTest {
         PagableResponse<UserDto> allUsers = userService.getAllUsers(1, 2, "name", "ascending");
 
         Assertions.assertEquals(3,allUsers.getContent().size());
-       
-
-               
 
     }
 
+    @Test
+    public void getUserByIdTest(){
+
+        Long id=1l;
+
+        Mockito.when(repositroy.findById(id)).thenReturn(Optional.of(user));
+        UserDto singleUser = userService.getSingleUser(id);
+
+        Assertions.assertNotNull(singleUser);
+        Assertions.assertEquals(user.getName(),singleUser.getName());
+    }
+
+    @Test
+    public void getUserByEmailTest(){
+        String emailId = "mohit@gmail.com";
+
+        Mockito.when(repositroy.findByEmail(emailId)).thenReturn(Optional.of(user));
+
+        UserDto email = userService.getUserbyEmail(emailId);
+
+        Assertions.assertNotNull(email);
+        Assertions.assertEquals(user.getEmail(),email.getEmail(),"Email Not Matched");
+    }
+
+    @Test
+    public void serchUserTest(){
+
+    }
 }
