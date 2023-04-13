@@ -13,6 +13,9 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
+
+import java.util.Optional;
+
 @SpringBootTest
 public class ServiceTest {
 
@@ -54,6 +57,29 @@ public class ServiceTest {
 
     }
 
+    // Update User Test
+    @Test
+    public void updateUserTest(){
+        Long id=1l;
+
+        UserDto userDto = UserDto.builder()
+                .name("Mohit Sindhpure")
+                .email("mohit@123")
+                .password("Mohit@123")
+                .gender("Male")
+                .about("this is update my name.")
+                .imageName("abc.png").build();
+
+        Mockito.when(repositroy.findById(Mockito.anyLong())).thenReturn(Optional.of(user));
+        Mockito.when(repositroy.save(Mockito.any())).thenReturn(user);
+
+        UserDto updateUser = userService.updateUser(userDto, id);
+        System.out.println(updateUser.getName());
+        Assertions.assertNotNull(userDto);
+        Assertions.assertEquals(userDto.getName(),updateUser.getName(),"name is valid");
+
+
+    }
 
 
 }
