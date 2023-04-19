@@ -1,6 +1,7 @@
 package com.shruteekatech.electronicstore.serviceimpltest;
 
 import com.shruteekatech.electronicstore.BaseTest;
+import com.shruteekatech.electronicstore.dtos.PagableResponse;
 import com.shruteekatech.electronicstore.dtos.ProductDto;
 import com.shruteekatech.electronicstore.model.Product;
 import com.shruteekatech.electronicstore.repository.ProductRepo;
@@ -12,6 +13,9 @@ import org.mockito.Mockito;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageImpl;
+import org.springframework.data.domain.Pageable;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -113,7 +117,17 @@ public class ProductServiceTest extends BaseTest {
         Assertions.assertEquals(product1.getPid(),productbyid.getPid());
 
     }
+    @Test
+    public void getAllProductsTest()
+    {
+        Page page=new PageImpl(products);
+        Mockito.when(productRepo.findAll((Pageable) Mockito.any())).thenReturn(page);
 
+        PagableResponse<ProductDto> allProducts = productService.getAllProducts(1, 5, "brand", "asc");
+
+        Assertions.assertEquals(3,allProducts.getContent().size());
+
+    }
 
 
 }
