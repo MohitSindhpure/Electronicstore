@@ -5,7 +5,10 @@ import com.shruteekatech.electronicstore.dtos.ProductDto;
 import com.shruteekatech.electronicstore.model.Product;
 import com.shruteekatech.electronicstore.repository.ProductRepo;
 import com.shruteekatech.electronicstore.service.ProductService;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.mock.mockito.MockBean;
@@ -63,6 +66,18 @@ public class ProductServiceTest extends BaseTest {
         products.add(product1);
         products.add(product2);
         products.add(product3);
+
+    }
+
+    @Test
+    public void createProductTest()
+    {
+        Mockito.when(productRepo.save(Mockito.any())).thenReturn(product1);
+
+        ProductDto product = productService.createProduct(modelMapper.map(product1, ProductDto.class));
+        Assertions.assertNotNull(product);
+        Assertions.assertEquals(product1.getBrand(),product.getBrand());
+
 
     }
 }
