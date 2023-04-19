@@ -128,6 +128,16 @@ public class ProductServiceTest extends BaseTest {
         Assertions.assertEquals(3,allProducts.getContent().size());
 
     }
+    @Test
+    public void searchByTitleTest()
+    {
 
+        // String title ="Cosmetics";
+        Mockito.when(productRepo.findAllByTitleContaining(Mockito.anyString(),Mockito.any())).thenReturn(new PageImpl(products));
+
+        PagableResponse<ProductDto> searchByTitle = productService.searchByTitle("Cometics", 1, 5, "title", "asc");
+
+        Assertions.assertEquals(3,searchByTitle.getContent().size(),"Not present data!");
+    }
 
 }
