@@ -102,6 +102,18 @@ public class ProductServiceTest extends BaseTest {
         Mockito.verify(productRepo,Mockito.times(1)).delete(product1);
 
     }
+    @Test
+    public void getByIdTest()
+    {
+        Long id=10l;
+        Mockito.when(productRepo.findById(Mockito.anyLong())).thenReturn(Optional.of(product1));
+
+        ProductDto productbyid = productService.getById(id);
+
+        Assertions.assertEquals(product1.getPid(),productbyid.getPid());
+
+    }
+
 
 
 }
