@@ -15,6 +15,7 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 public class ProductServiceTest extends BaseTest {
 
@@ -77,7 +78,18 @@ public class ProductServiceTest extends BaseTest {
         ProductDto product = productService.createProduct(modelMapper.map(product1, ProductDto.class));
         Assertions.assertNotNull(product);
         Assertions.assertEquals(product1.getBrand(),product.getBrand());
+    }
 
+    @Test
+    public void updateProducts()
+    {
+        Long id=1l;
+        Mockito.when(productRepo.findById(Mockito.anyLong())).thenReturn(Optional.of(product1));
+        Mockito.when(productRepo.save(Mockito.any())).thenReturn(product1);
+        ProductDto productDtos = productService.updateProducts(productDto, id);
+
+        Assertions.assertNotNull(productDtos);
+        Assertions.assertEquals(product1.getBrand(),productDtos.getBrand());
 
     }
 }
