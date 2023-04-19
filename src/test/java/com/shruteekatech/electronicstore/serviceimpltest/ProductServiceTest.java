@@ -92,4 +92,16 @@ public class ProductServiceTest extends BaseTest {
         Assertions.assertEquals(product1.getBrand(),productDtos.getBrand());
 
     }
+    @Test
+    public void deleteProductTest()
+    {
+        Long id=10l;
+        Mockito.when(productRepo.findById(Mockito.anyLong())).thenReturn(Optional.of(product1));
+
+        productService.deleteProduct(id);
+        Mockito.verify(productRepo,Mockito.times(1)).delete(product1);
+
+    }
+
+
 }
