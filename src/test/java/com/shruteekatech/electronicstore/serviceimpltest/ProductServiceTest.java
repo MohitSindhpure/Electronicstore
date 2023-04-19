@@ -140,4 +140,15 @@ public class ProductServiceTest extends BaseTest {
         Assertions.assertEquals(3,searchByTitle.getContent().size(),"Not present data!");
     }
 
+    @Test
+    public void searchByLive()
+    {
+
+        // String title ="Cosmetics";
+        Mockito.when(productRepo.findAllByLiveTrue(Mockito.any())).thenReturn(new PageImpl(products));
+
+        PagableResponse<ProductDto> searchByLive = productService.searchByLive(true, 1, 5, "title", "asc");
+
+        Assertions.assertEquals(3,searchByLive.getContent().size(),"Not present data!");
+    }
 }
